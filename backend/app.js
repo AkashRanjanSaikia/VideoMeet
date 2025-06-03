@@ -24,7 +24,7 @@ app.get("/" ,(req,res)=>{
 })
 
 const start = async()=>{
-    const connectDb = await mongoose.connect("mongodb+srv://arsaikia26:oVqyXXhVquoW5QKf@cluster0.stypq.mongodb.net/");
+    const connectDb = await mongoose.connect();
     console.log("MongoDB is connected");
     server.listen(app.get("port"),()=>{
 
